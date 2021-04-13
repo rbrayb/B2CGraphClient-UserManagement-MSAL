@@ -19,7 +19,24 @@ For detailed instructions on how to run this sample, checkout [this document](ht
 
 Note: This link now points to a .NET Core version.
 
-Run "B2C Help":
+In "app.config":
+
+Update with your tenant and application details.
+
+* b2c:Authority value="https://login.microsoftonline.com/tenant.onmicrosoft.com"
+* b2c:Tenant value="tenant.onmicrosoft.com"
+* b2c:ClientId value="cd56788c-1234-4e9e-bbeb-5d9975456705"
+* b2c:ClientSecret value="Gy6O.sustgd2_RApD5z-g3lH-6R4278qpe"  
+
+Refer [this](https://docs.microsoft.com/en-us/azure/active-directory-b2c/microsoft-graph-get-started?tabs=app-reg-ga).
+
+Note above values are examples only!
+
+In the JSON files, for [extension attributes](https://docs.microsoft.com/en-us/azure/active-directory-b2c/user-flow-custom-attributes?pivots=b2c-user-flow#using-custom-attribute-with-ms-graph-api), add the clientID of the extensions application e.g.
+
+"extension_application ID_employeeID": "123456"	
+
+Run "B2C Help" for reference:
 
 * Get-User                     : Read users from your B2C directory.  Optionally accepts an ObjectId as a 2nd argument, and query expression as a 3rd argument.
 * Create-User                  : Create a new user in your B2C directory.  Requires a path to a .json file which contains required and optional information as a 2nd argument.
