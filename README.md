@@ -32,7 +32,7 @@ Refer [this](https://docs.microsoft.com/en-us/azure/active-directory-b2c/microso
 
 Note above values are examples only!
 
-In the JSON files, for [extension attributes](https://docs.microsoft.com/en-us/azure/active-directory-b2c/user-flow-custom-attributes?pivots=b2c-user-flow#using-custom-attribute-with-ms-graph-api), add the clientID of the extensions application e.g.
+In the JSON files, for [extension attributes](https://docs.microsoft.com/en-us/azure/active-directory-b2c/user-flow-custom-attributes?pivots=b2c-user-flow#using-custom-attribute-with-ms-graph-api), add the application ID of the extensions application e.g.
 
 "extension_application ID_employeeID": "123456"	
 
